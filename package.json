@@ -3,6 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@cat3d/renderer": "^1.0.0"
+    "@cat3d/renderer": "^1.0.1"
   }
 }

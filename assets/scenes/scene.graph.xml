@@ -1,4 +1,4 @@
-export default `<group>
+<group>
   <camera id="main-camera" fov="45" near="1.0" far="1500.0" pipelineLink="$default" z="100" />
   <group id="sceneGroup">
     <group id="rotateGroup">
@@ -10,4 +10,4 @@ export default `<group>
   </group>
   <light id="sun" type="Directional" materialLink="$lighting"  rx="-45" ry="-45"  intensity="1.0"  />
   <model id="skybox" modelLink="models/box.obj" materialLink="materials/sky.material.json"/>
-</group>`;
+</group>

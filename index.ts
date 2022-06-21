@@ -23,7 +23,7 @@ canvas.height = self.screen.height;
 
   const assetsManager: AssetsManager = injector.resolve(AssetsManager);
   const httpCache: HttpClientCache = injector.resolve(HttpClientCache);
-  httpCache.set(httpClient.baseUrl + 'scenes/scene.graph.xml', GRAPH);
+  // httpCache.set(httpClient.baseUrl + 'scenes/scene.graph.xml', GRAPH);
 
   const sceneManager = injector.resolve(SceneManager);
   const renderer = injector.resolve(Renderer);
