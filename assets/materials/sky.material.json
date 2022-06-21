@@ -1,0 +1,7 @@
+{
+  "cubemap": {
+    "type": "Cubemap",
+    "url": "$env"
+  },
+  "$shaderUrl": "$skybox"
+}

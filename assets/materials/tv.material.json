@@ -1,0 +1,29 @@
+{
+  "albedoMap": {
+    "type": "2D",
+    "url": "textures/tv/uv_albedo-rgb.jpg"
+  },
+  "aoMap": {
+    "type": "2D",
+    "url": "textures/tv/uv_AO-rgb.jpg"
+  },
+  "metallicMap": {
+    "type": "2D",
+    "url": "textures/tv/uv_metallic-rgb.jpg"
+  },
+  "normalMap": {
+    "type": "2D",
+    "url": "textures/tv/uv_normal-rgb.png"
+  },
+  "roughnessMap": {
+    "type": "2D",
+    "url": "textures/tv/uv_roughness-rgb.jpg"
+  },
+  "matRoughness": 2.0,
+  "matMetallic": 1.0,
+  "matReflectance": 0.5,
+  "matAlbedo": [1.0, 1.0, 1.0],
+
+  "$shaderUrl": "$mesh",
+  "$featues": ["FLIP_UVS", "NORMAL_MAPPING"]
+}
