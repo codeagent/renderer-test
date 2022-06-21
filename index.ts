@@ -1,17 +1,15 @@
 import {
   AssetsManager,
-  AssetsCache,
   SceneManager,
   Renderer,
   ArcRotationCameraController,
   bootstrap,
   HttpClient,
-  HttpClientCache,
 } from '@cat3d/renderer';
 
 const canvas = document.getElementById('canvas') as HTMLCanvasElement;
-canvas.width = self.screen.width;
-canvas.height = self.screen.height;
+// canvas.width = self.screen.width;
+// canvas.height = self.screen.height;
 
 (async () => {
   const injector = await bootstrap({ element: canvas });
@@ -20,14 +18,9 @@ canvas.height = self.screen.height;
     'https://raw.githubusercontent.com/codeagent/renderer-test/master/assets/';
 
   const assetsManager: AssetsManager = injector.resolve(AssetsManager);
-  const httpCache: HttpClientCache = injector.resolve(HttpClientCache);
-  // httpCache.set(httpClient.baseUrl + 'scenes/scene.graph.xml', GRAPH);
-
   const sceneManager = injector.resolve(SceneManager);
   const renderer = injector.resolve(Renderer);
   const graph = await assetsManager.resolveSceneGraph('scenes/scene.graph.xml');
-  
-  console.log(graph);
 
   sceneManager.activeSceneGraph = graph;
   const camera = sceneManager.findById('main-camera');
